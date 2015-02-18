@@ -70,5 +70,9 @@ It needs the url of the tide or the survey generated through [homepage](https://
 
 == Changelog ==
 
-= 1.0 =
+= 0.1.0 =
 * Initial release.
+
+= 0.1.1 =
+* Fixed a bug where some tides where not shown in widgets
+
