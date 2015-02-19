@@ -1,7 +1,7 @@
 <?php
 /**
  * @package Humantide
- * @version 0.1.2
+ * @version 0.1.3
  */
 /*
 Plugin Name: Humantide
@@ -148,7 +148,8 @@ class Humantide{
 
 	// the_content
 	function my_the_content_filter($content) {
-        $pattern = '/^(|<p>)(http|https):\/\/(|www.)humantide.(com|es)\/(calls|encuestas|mvps|pro\/vista\/channel)\/([0-9]+)(public|config|\/public|\/config|)(|\/)(|<\/p>)$/';
+//        $pattern = '/^(|<p>)(http|https):\/\/(|www.)humantide.(com|es)\/(calls|encuestas|mvps|pro\/vista\/channel)\/([0-9]+)(public|config|\/public|\/config|)(|\/)(|<\/p>)$/';
+        $pattern = '/^(|<p>)(http|https):\/\/(|www.)humantide.(com|es)\/(calls|encuestas|mvps|pro\/vista\/channel)\/([0-9]+)(public|config|\/public|\/config|)(.*)(|<\/p>)$/';
 
 		$isTide = preg_match($pattern, $content, $matches);
 
@@ -786,7 +787,8 @@ class HumantideBasicWidget extends WP_Widget
     }
 
     function isHumantide($content, $height, $hideMap, $hideUser, $hidePhoto, $hideTide, $hideSettings, $hideStats, $hideShare, $hideCom) {
-        $pattern = '/^(|<p>)(http|https):\/\/(|www.)humantide.(com|es)\/(calls|encuestas|mvps|pro\/vista\/channel)\/([0-9]+)(public|config|\/public|\/config|)(|\/)(|<\/p>)$/';
+//        $pattern = '/^(|<p>)(http|https):\/\/(|www.)humantide.(com|es)\/(calls|encuestas|mvps|pro\/vista\/channel)\/([0-9]+)(public|config|\/public|\/config|)(|\/)(|<\/p>)$/';
+        $pattern = '/^(|<p>)(http|https):\/\/(|www.)humantide.(com|es)\/(calls|encuestas|mvps|pro\/vista\/channel)\/([0-9]+)(public|config|\/public|\/config|)(.*)(|<\/p>)$/';
 
         $isTide = preg_match($pattern, $content, $matches);
 
