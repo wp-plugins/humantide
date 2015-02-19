@@ -1,13 +1,13 @@
 <?php
 /**
  * @package Humantide
- * @version 0.1.1
+ * @version 0.1.2
  */
 /*
 Plugin Name: Humantide
 Plugin URI: http://wordpress.org/plugins/humantide/
 Description: Humantide.
-Version: 0.1.0
+Version: 0.1.2
  * Author: Humantide
  * Author URI: https://www.humantide.com
 */
