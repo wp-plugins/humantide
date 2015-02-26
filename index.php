@@ -1,13 +1,13 @@
 <?php
 /**
  * @package Humantide
- * @version 0.1.4
+ * @version 0.1.5
  */
 /*
 Plugin Name: Humantide
 Plugin URI: http://wordpress.org/plugins/humantide/
 Description: Humantide.
-Version: 0.1.4
+Version: 0.1.5
  * Author: Humantide
  * Author URI: https://www.humantide.com
 */
@@ -787,8 +787,7 @@ class HumantideBasicWidget extends WP_Widget
     }
 
     function isHumantide($content, $height, $hideMap, $hideUser, $hidePhoto, $hideTide, $hideSettings, $hideStats, $hideShare, $hideCom) {
-//        $pattern = '/^(|<p>)(http|https):\/\/(|www.)humantide.(com|es)\/(calls|encuestas|mvps|pro\/vista\/channel)\/([0-9]+)(public|config|\/public|\/config|)(|\/)(|<\/p>)$/';
-        $pattern = '/^(|<p>)(http|https):\/\/(|www.)humantide.(com|es)\/(calls|encuestas|mvps|pro\/vista\/channel)\/([0-9]+)(public|config|\/public|\/config|)(.*)(|<\/p>)$/';
+        $pattern = '/^(|<p>)(http|https):\/\/(|www.)humantide.(com|es)\/(encuestas|mvps|pro\/vista\/channel)\/([0-9]+)(public|config|\/public|\/config|)(.*)(|<\/p>)$/';
 
         $isTide = preg_match($pattern, $content, $matches);
 

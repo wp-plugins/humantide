@@ -4,7 +4,7 @@ Donate link:
 Tags: humantide, social, comments, communication, plugin, surveys
 Requires at least: 3.0.1
 Tested up to: 3.4
-Stable tag: 0.1.4
+Stable tag: 0.1.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -85,3 +85,5 @@ It needs the url of the tide or the survey generated through [homepage](https://
 = 0.1.4 =
 * Fixed minor bug
 
+= 0.1.5 =
+* Fixed a bug when trying to show a tide in a survey or channel
